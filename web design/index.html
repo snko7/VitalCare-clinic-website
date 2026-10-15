@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>VitalCare Clinic – Modern Health Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VitalCare Clinic – student project health services website prototype.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="logo-area">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">+</span>
+        <span class="logo-text">VitalCare Clinic</span>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <!-- hamburger button -->
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- menu items -->
+      <ul class="nav-list">
+        <li><a class="nav-link nav-link--active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a class="nav-link" href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors &amp; Departments</a></li>
+        <li><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        <li><a class="nav-link nav-link--highlight" href="booking.html"><i class="fa-solid fa-calendar-check"></i> Book</a></li>
+
+        <!-- 🔻 language button INSIDE the menu, under Book -->
+        <li class="nav-lang">
+          <div class="lang-menu">
+            <input type="checkbox" id="langToggle" class="lang-toggle">
+
+            <!-- style like other nav items -->
+            <label for="langToggle" class="lang-switch nav-link">
+              <i class="fa-solid fa-language"></i> EN / CZ
+            </label>
+
+            <ul class="lang-dropdown">
+              <li>
+                <label for="langToggle">
+                  <span class="flag">🇬🇧</span> English
+                </label>
+              </li>
+              <li>
+                <label for="langToggle">
+                  <span class="flag">🇨🇿</span> Čeština
+                </label>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <form class="site-search" action="search-results.html">
+      <input type="search" name="q" placeholder="Search doctors, exams...">
+      <button class="btn btn-primary">Search</button>
+    </form>
+
+  </div>
+</header>
+
+
+
+
+  <main>
+
+    <section class="hero-home">
+      <div class="hero-home-inner">
+        <div class="hero-text">
+          <h1>Your health. Our care.</h1>
+          <p class="lead">
+            VitalCare Clinic offers expert medical care, modern facilities, and a friendly team of specialists dedicated
+            to your health. From routine check-ups to advanced treatment, we are here for you.
+          </p>
+
+          <div class="hero-actions">
+            <a href="booking.html" class="btn-primary">Book a Visit</a>
+            <a href="doctors.html" class="btn-secondary">Find a Doctor</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="img/clinic2.jpeg" alt="Clinic illustration">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="features">
+      <h2>Why choose VitalCare</h2>
+
+      <div class="features-grid">
+
+        <div class="feature-card fade-card">
+          <i class="fa-solid fa-user-doctor"></i>
+          <h3>Experienced specialists</h3>
+          <p>
+            Our fictional team represents a multi-disciplinary clinic with internal medicine,
+            pediatrics, physiotherapy and more.
+          </p>
+        </div>
+
+        <div class="feature-card fade-card">
+          <i class="fa-solid fa-calendar-check"></i>
+          <h3>Online booking</h3>
+          <p>
+            Schedule appointments at your convenience. Same-week options are usually available.
+          </p>
+        </div>
+
+        <div class="feature-card fade-card">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <h3>Integrated care</h3>
+          <p>
+            From prevention to rehabilitation — centralized information and continuity of care.
+          </p>
+        </div>
+
+        <div class="feature-card fade-card">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h3>Digital-first experience</h3>
+          <p>
+            Clear instructions, reminders and digital communication ensure maximum comfort.
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <section class="news">
+      <h2>Latest News</h2>
+
+      <div class="news-grid">
+
+        <article class="news-card fade-card">
+          <img src="img/female-doctor3.jpg" alt="Doctor">
+          <h3>New Specialist Joined Our Team</h3>
+          <p>We are happy to welcome MUDr. Jana Horáková, a cardiology specialist with more than 12 years of practice.
+          </p>
+          <a href="news-specialist.html" class="news-link">Read more →</a>
+        </article>
+
+        <article class="news-card fade-card">
+          <img src="img/calender2.png" alt="Clinic">
+          <h3>Updated Opening Hours</h3>
+          <p>We have extended our weekend hours to offer more flexibility for our patients.</p>
+          <a href="news-hours.html" class="news-link">Read more →</a>
+        </article>
+
+        <article class="news-card fade-card">
+          <img src="img/injection.jpg" alt="Vaccination">
+          <h3>Flu Vaccination Program</h3>
+          <p>Protect yourself and your family this season. Book your flu vaccination today.</p>
+          <a href="news-vaccination.html" class="news-link">Read more →</a>
+        </article>
+
+      </div>
+    </section>
+
+
+    <section class="today">
+      <h2>Today at VitalCare</h2>
+
+
+      <p class="today-note">
+        For emergencies, always call your local emergency number.
+      </p>
+
+
+      <table id="opening-hours" class="hours-table">
+        <thead>
+          <tr class="hours-days-row">
+            <th colspan="3">
+              Working days: <strong>Monday–Friday</strong> ·
+              Closed: <strong>Saturday and Sunday</strong>
+            </th>
+          </tr>
+          <tr>
+            <th>Department</th>
+            <th>Opens</th>
+            <th>Closes</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>General Practice &amp; Internal Medicine</td>
+            <td>08:00</td>
+            <td>17:00</td>
+          </tr>
+          <tr>
+            <td>Pediatrics</td>
+            <td>08:00</td>
+            <td>16:30</td>
+          </tr>
+          <tr>
+            <td>Cardiology</td>
+            <td>09:00</td>
+            <td>17:00</td>
+          </tr>
+          <tr>
+            <td>Orthopedics</td>
+            <td>08:00</td>
+            <td>16:00</td>
+          </tr>
+          <tr>
+            <td>Rehabilitation &amp; Physiotherapy</td>
+            <td>07:30</td>
+            <td>15:30</td>
+          </tr>
+          <tr>
+            <td>Neurology</td>
+            <td>09:00</td>
+            <td>16:00</td>
+          </tr>
+          <tr>
+            <td>Gynecology</td>
+            <td>08:00</td>
+            <td>15:30</td>
+          </tr>
+          <tr>
+            <td>Dermatology</td>
+            <td>09:00</td>
+            <td>14:30</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>VitalCare Clinic</h3>
+        <p>
+          Prototype of a multi-specialty clinic created for a student web design project.
+          All texts and illustrations are generated by AI.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#opening-hours">Opening hours</a></li>
+          <li><a href="doctors.html">Doctors &amp; Departments</a></li>
+          <li><a href="booking.html">Book a Visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Email: contact@vitalcare.com</p>
+        <p>Phone: +420 123 456 789</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 VitalCare Clinic — Student Prototype</p>
+    </div>
+  </footer>
+  <script src="js/nav-toggle.js"></script>
+
+  <script src="js/search-suggestions.js"></script>
+</body>
+
+</html>

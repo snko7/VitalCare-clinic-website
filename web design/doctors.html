@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Doctors &amp; Departments – VitalCare Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Overview of doctors, examinations and departments at the fictional VitalCare Clinic.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="logo-area">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">+</span>
+        <span class="logo-text">VitalCare Clinic</span>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <!-- Hamburger button -->
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main links -->
+      <ul class="nav-list">
+        <li><a class="nav-link nav-link--active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a class="nav-link" href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors &amp; Departments</a></li>
+        <li><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        <li>
+          <a class="nav-link nav-link--highlight" href="booking.html">
+            <i class="fa-solid fa-calendar-check"></i> Book
+          </a>
+        </li>
+      </ul>
+
+      <!-- Language switch is now INSIDE nav (and therefore inside the mobile menu) -->
+      <div class="lang-menu">
+        <input type="checkbox" id="langToggle" class="lang-toggle">
+        <label for="langToggle" class="lang-switch">
+          <i class="fa-solid fa-language"></i> EN / CZ
+        </label>
+        <ul class="lang-dropdown">
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇬🇧</span> English
+            </label>
+          </li>
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇨🇿</span> Čeština
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <label for="langToggle" class="lang-overlay"></label>
+    </nav>
+
+    <!-- Search stays as it was -->
+    <form class="site-search" action="search-results.html" method="get">
+      <input type="search" name="q" placeholder="Search doctors, exams..." aria-label="Search">
+      <button class="btn btn-primary">Search</button>
+    </form>
+
+  </div>
+</header>
+
+
+  <div class="container">
+    <nav class="breadcrumb">
+      <i class="fa-solid fa-house"></i>
+      <a href="index.html">Home</a> <span>›</span> Doctors & Departments
+    </nav>
+  </div>
+
+  <main>
+
+    <section class="page-header">
+      <h1>Our Doctors & Departments</h1>
+      <p class="lead">
+        Meet our fictional medical team. These profiles are created as part of a student project and serve only for
+        demonstration.
+      </p>
+    </section>
+    <section class="departments-section" aria-labelledby="departments-heading">
+      <header class="departments-header">
+        <h2 id="departments-heading">Medical Departments</h2>
+        <p class="lead">
+          Overview of key departments at the fictional VitalCare Clinic.
+        </p>
+      </header>
+
+      <div class="departments-grid">
+        <article class="department-card department-card--1" aria-label="General Practice and Internal Medicine">
+          <div class="department-card__content">
+            <h3>General Practice &amp; Internal Medicine</h3>
+            <p>
+              First contact point for most patients, preventive check-ups, chronic disease management and coordination
+              of follow-up care.
+            </p>
+            <a href="department-general-practice.html" class="btn-sm">
+              View department detail
+            </a>
+          </div>
+        </article>
+
+        <article class="department-card department-card--2" aria-label="Pediatrics">
+          <div class="department-card__content">
+            <h3>Pediatrics</h3>
+            <p>
+              Comprehensive care for children and adolescents including preventive examinations and vaccinations.
+            </p>
+            <a href="department-pediatrics.html" class="btn-sm">
+              View department detail
+            </a>
+          </div>
+        </article>
+
+        <article class="department-card department-card--3" aria-label="Cardiology">
+          <div class="department-card__content">
+            <h3>Cardiology</h3>
+            <p>
+              Diagnostics and monitoring of heart and vascular diseases, ECG, echocardiography and risk factor
+              counselling.
+            </p>
+            <a href="department-cardiology.html" class="btn-sm">
+              View department detail
+            </a>
+          </div>
+        </article>
+
+        <article class="department-card department-card--4" aria-label="Orthopedics">
+          <div class="department-card__content">
+            <h3>Orthopedics</h3>
+            <p>
+              Treatment of joint and bone problems, sports injuries and post-operative consultations.
+            </p>
+            <a href="department-orthopedics.html" class="btn-sm">
+              View department detail
+            </a>
+          </div>
+        </article>
+
+        <article class="department-card department-card--5" aria-label="Rehabilitation and Physiotherapy">
+          <div class="department-card__content">
+            <h3>Rehabilitation &amp; Physiotherapy</h3>
+            <p>
+              Individual rehabilitation plans, physiotherapy and movement programs after injuries, surgery or long-term
+              illness.
+            </p>
+            <a href="department-rehabilitation.html" class="btn-sm">
+              View department detail
+            </a>
+          </div>
+        </article>
+
+        <article class="department-card department-card--6" aria-label="Neurology">
+          <div class="department-card__content">
+            <h3>Neurology</h3>
+            <p>
+              Care for patients with migraines, neuropathies and other neurological conditions.
+            </p>
+            <a href="department-neurology.html" class="btn-sm">
+              View department detail
+            </a>
+          </div>
+        </article>
+
+        <article class="department-card department-card--7" aria-label="Gynecology">
+          <div class="department-card__content">
+            <h3>Gynecology</h3>
+            <p>
+              Preventive examinations, pregnancy care and consultations related to women&#39;s health.
+            </p>
+            <a href="department-gynecology.html" class="btn-sm">
+              View department detail
+            </a>
+          </div>
+        </article>
+
+        <article class="department-card department-card--8" aria-label="Dermatology">
+          <div class="department-card__content">
+            <h3>Dermatology</h3>
+            <p>
+              Skin check-ups, treatment of eczema, acne and minor dermatological procedures.
+            </p>
+            <a href="department-dermatology.html" class="btn-sm">
+              View department detail
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="doctor-grid">
+
+      <article class="doctor-card fade-card" >
+        <img src="img/female-doctor.webp" alt="Doctor photo">
+        <h3>MUDr. Anna Nováková</h3>
+        <p class="specialty">Internal Medicine • Preventive Care</p>
+        <p class="subtle">Available: Mon–Thu</p>
+        <a href="doctor-anna.html" class="btn-sm">View profile</a>
+      </article>
+
+      <article class="doctor-card fade-card">
+        <img src="img/male-doctor.avif" alt="Doctor photo">
+        <h3>MUDr. Pavel Černý</h3>
+        <p class="specialty">Pediatrics • Family Medicine</p>
+        <p class="subtle">Available: Tue–Fri</p>
+        <a href="doctor-pavel.html" class="btn-sm">View profile</a>
+      </article>
+
+      <article class="doctor-card fade-card">
+        <img src="img/female-doctor2.avif" alt="Doctor photo">
+        <h3>Mgr. Jana Králová</h3>
+        <p class="specialty">Physiotherapy • Rehabilitation</p>
+        <p class="subtle">Available: Mon–Wed</p>
+        <a href="doctor-jana.html" class="btn-sm">View profile</a>
+      </article>
+
+      <article class="doctor-card fade-card">
+        <img src="img/male-doctor2.webp" alt="Doctor photo">
+        <h3>MUDr. Tomáš Svoboda</h3>
+        <p class="specialty">Orthopedics • Sports Injuries</p>
+        <p class="subtle">Available: Wed–Fri</p>
+        <a href="doctor-tomas.html" class="btn-sm">View profile</a>
+      </article>
+      <article class="doctor-card fade-card">
+        <img src="img/male-docter3.jpg" alt="Doctor photo">
+        <h3>MUDr. David Horák</h3>
+        <p class="specialty">Cardiology • Heart disease</p>
+        <p class="subtle">Available: Mon–Thu</p>
+        <a href="doctor-david.html" class="btn-sm">View profile</a>
+      </article>
+
+      <article class="doctor-card fade-card">
+        <img src="img/female-doctor4.jpg" alt="Doctor photo">
+        <h3>MUDr. Petra Malá</h3>
+        <p class="specialty">Neurology • Headaches &amp; dizziness</p>
+        <p class="subtle">Available: Tue–Fri</p>
+        <a href="doctor-petra.html" class="btn-sm">View profile</a>
+      </article>
+
+      <article class="doctor-card fade-card">
+        <img src="img/female-doctor5.jpg" alt="Doctor photo">
+        <h3>MUDr. Eva Dvořáková</h3>
+        <p class="specialty">Gynecology • Women&#39;s health</p>
+        <p class="subtle">Available: Mon, Wed, Fri</p>
+        <a href="doctor-eva.html" class="btn-sm">View profile</a>
+      </article>
+
+      <article class="doctor-card fade-card">
+        <img src="img/male-doctor4.jpg" alt="Doctor photo">
+        <h3>MUDr. Martin Veselý</h3>
+        <p class="specialty">Dermatology • Skin &amp; allergy</p>
+        <p class="subtle">Available: Tue–Thu</p>
+        <a href="doctor-martin.html" class="btn-sm">View profile</a>
+      </article>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>VitalCare Clinic</h3>
+        <p>
+          Prototype of a multi-specialty clinic created for a student web design project.
+          All texts and illustrations are generated by AI.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#opening-hours">Opening hours</a></li>
+          <li><a href="doctors.html">Doctors &amp; Departments</a></li>
+          <li><a href="booking.html">Book a Visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Email: contact@vitalcare.com</p>
+        <p>Phone: +420 123 456 789</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 VitalCare Clinic — Student Prototype</p>
+    </div>
+  </footer>
+  <script src="js/nav-toggle.js"></script>
+
+<script src="js/search-suggestions.js"></script>
+</body>
+
+</html>

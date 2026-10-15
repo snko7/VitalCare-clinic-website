@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Booking confirmation – VitalCare Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Confirmation page after booking a visit in the VitalCare Clinic student prototype.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="logo-area">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">+</span>
+        <span class="logo-text">VitalCare Clinic</span>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <!-- Hamburger button -->
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main links -->
+      <ul class="nav-list">
+        <li><a class="nav-link nav-link--active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a class="nav-link" href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors &amp; Departments</a></li>
+        <li><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        <li>
+          <a class="nav-link nav-link--highlight" href="booking.html">
+            <i class="fa-solid fa-calendar-check"></i> Book
+          </a>
+        </li>
+      </ul>
+
+      <!-- Language switch is now INSIDE nav (and therefore inside the mobile menu) -->
+      <div class="lang-menu">
+        <input type="checkbox" id="langToggle" class="lang-toggle">
+        <label for="langToggle" class="lang-switch">
+          <i class="fa-solid fa-language"></i> EN / CZ
+        </label>
+        <ul class="lang-dropdown">
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇬🇧</span> English
+            </label>
+          </li>
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇨🇿</span> Čeština
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <label for="langToggle" class="lang-overlay"></label>
+    </nav>
+
+    <!-- Search stays as it was -->
+    <form class="site-search" action="search-results.html" method="get">
+      <input type="search" name="q" placeholder="Search doctors, exams..." aria-label="Search">
+      <button class="btn btn-primary">Search</button>
+    </form>
+
+  </div>
+</header>
+
+
+  <div class="container">
+    <nav class="breadcrumb">
+      <i class="fa-solid fa-house"></i>
+      <a href="index.html">Home</a> <span>›</span>
+      <a href="booking.html">Book a visit</a> <span>›</span>
+      Booking confirmation
+    </nav>
+  </div>
+
+  <main id="main-content" class="page confirmation-page">
+    <div class="container">
+      <section class="confirmation-card">
+        <header>
+          <h1>Your booking has been received</h1>
+          <p class="page-lead">
+            This page completes the booking process in the student prototype. Based on the form you just filled in,
+            we show a summary of your requested visit below. No real data has been sent or stored.
+          </p>
+        </header>
+
+        <article>
+          <h2>Summary of your booking</h2>
+
+          <h3>Visit details</h3>
+          <ul class="simple-list">
+            <li>Service: <span id="summary-service">Preventive check-up (example)</span></li>
+            <li>Department: <span id="summary-department">General Practice &amp; Internal Medicine (example)</span></li>
+            <li>Preferred doctor: <span id="summary-doctor">No preference (example)</span></li>
+            <li>Priority: <span id="summary-priority">Standard (example)</span></li>
+            <li>
+              Date &amp; time:
+              <time id="summary-datetime" datetime="2025-12-10T09:00">10 Dec 2025, 09:00 (example)</time>
+            </li>
+            <li>Location: <span id="summary-location">VitalCare Clinic, Example Street 12, Sample City</span></li>
+          </ul>
+
+          <h3>Patient &amp; contact</h3>
+          <ul class="simple-list">
+            <li>Patient name: <span id="summary-name">Example Patient</span></li>
+            <li>Contact: <span id="summary-contact">example@example.com, +420 123 456 789</span></li>
+          </ul>
+
+          <section id="summary-reason-section" class="info-card" hidden>
+            <h3>Reason for visit (as written in the form)</h3>
+            <p id="summary-reason-text"></p>
+          </section>
+
+          <p class="text-muted">
+            This confirmation page is part of a university web-design project. The information you see here only
+            reflects what you entered into the booking form on this device and is not processed by any real clinic.
+          </p>
+        </article>
+
+        <div class="form-actions">
+          <a href="index.html" class="btn btn-primary">Back to homepage</a>
+          <a href="booking.html" class="btn btn-ghost">Book another visit</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>VitalCare Clinic</h3>
+        <p>
+          Prototype of a multi-specialty clinic created for a student web design project.
+          All texts and illustrations are generated by AI.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#opening-hours">Opening hours</a></li>
+          <li><a href="doctors.html">Doctors &amp; Departments</a></li>
+          <li><a href="booking.html">Book a Visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Email: contact@vitalcare.com</p>
+        <p>Phone: +420 123 456 789</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 VitalCare Clinic — Student Prototype</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var params = new URLSearchParams(window.location.search);
+
+      // If there is no booking data in the URL, keep the example values.
+      if (!params.has('visitType') && !params.has('preferredDate') && !params.has('fullName')) {
+        return;
+      }
+
+      function setText(id, value) {
+        var el = document.getElementById(id);
+        if (el && value) {
+          el.textContent = value;
+        }
+      }
+
+      var visitType = params.get('visitType') || '';
+      var department = params.get('department') || '';
+      var doctor = params.get('doctor') || '';
+      var priority = params.get('priority') || '';
+      var dateStr = params.get('preferredDate') || '';
+      var timeStr = params.get('preferredTime') || '';
+      var fullName = params.get('fullName') || '';
+      var email = params.get('email') || '';
+      var phone = params.get('phone') || '';
+      var reason = params.get('reason') || '';
+
+      if (visitType) {
+        setText('summary-service', visitType);
+      }
+
+      if (department) {
+        setText('summary-department', department);
+      }
+
+      if (doctor) {
+        setText('summary-doctor', doctor);
+      }
+
+      if (priority) {
+        var priorityLabel = priority;
+        if (priority === 'standard') {
+          priorityLabel = 'Standard';
+        } else if (priority === 'soon') {
+          priorityLabel = 'As soon as possible';
+        }
+        setText('summary-priority', priorityLabel);
+      }
+
+      var datetimeEl = document.getElementById('summary-datetime');
+      if (datetimeEl && (dateStr || timeStr)) {
+        var display = '';
+        var datetimeAttr = '';
+
+        if (dateStr) {
+          var parts = dateStr.split('-');
+          if (parts.length === 3) {
+            var y = parseInt(parts[0], 10);
+            var m = parseInt(parts[1], 10);
+            var d = parseInt(parts[2], 10);
+            if (!isNaN(y) && !isNaN(m) && !isNaN(d)) {
+              var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+              var monthName = months[Math.max(0, Math.min(11, m - 1))];
+              display = d + ' ' + monthName + ' ' + y;
+            } else {
+              display = dateStr;
+            }
+          } else {
+            display = dateStr;
+          }
+        }
+
+        if (timeStr) {
+          display = display ? (display + ', ' + timeStr) : timeStr;
+        }
+
+        if (!display) {
+          display = (dateStr + ' ' + timeStr).trim();
+        }
+
+        if (dateStr) {
+          datetimeAttr = dateStr + 'T' + (timeStr || '00:00');
+        }
+
+        if (datetimeAttr) {
+          datetimeEl.setAttribute('datetime', datetimeAttr);
+        }
+
+        datetimeEl.textContent = display;
+      }
+
+      if (fullName) {
+        setText('summary-name', fullName);
+      }
+
+      var contactParts = [];
+      if (email) contactParts.push(email);
+      if (phone) contactParts.push(phone);
+      if (contactParts.length) {
+        setText('summary-contact', contactParts.join(', '));
+      }
+
+      if (reason) {
+        var reasonSection = document.getElementById('summary-reason-section');
+        var reasonText = document.getElementById('summary-reason-text');
+        if (reasonSection && reasonText) {
+          reasonSection.hidden = false;
+          reasonText.textContent = reason;
+        }
+      }
+    });
+  </script>
+  <script src="js/nav-toggle.js"></script>
+
+  <script src="js/search-suggestions.js"></script>
+
+</body>
+
+</html>

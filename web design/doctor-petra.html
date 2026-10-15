@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Detail – MUDr. Petra Malá – VitalCare Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Example detailed profile of neurologist MUDr. Petra Malá at the fictional VitalCare Clinic.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="logo-area">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">+</span>
+        <span class="logo-text">VitalCare Clinic</span>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <!-- Hamburger button -->
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main links -->
+      <ul class="nav-list">
+        <li><a class="nav-link nav-link--active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a class="nav-link" href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors &amp; Departments</a></li>
+        <li><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        <li>
+          <a class="nav-link nav-link--highlight" href="booking.html">
+            <i class="fa-solid fa-calendar-check"></i> Book
+          </a>
+        </li>
+      </ul>
+
+      <!-- Language switch is now INSIDE nav (and therefore inside the mobile menu) -->
+      <div class="lang-menu">
+        <input type="checkbox" id="langToggle" class="lang-toggle">
+        <label for="langToggle" class="lang-switch">
+          <i class="fa-solid fa-language"></i> EN / CZ
+        </label>
+        <ul class="lang-dropdown">
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇬🇧</span> English
+            </label>
+          </li>
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇨🇿</span> Čeština
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <label for="langToggle" class="lang-overlay"></label>
+    </nav>
+
+    <!-- Search stays as it was -->
+    <form class="site-search" action="search-results.html" method="get">
+      <input type="search" name="q" placeholder="Search doctors, exams..." aria-label="Search">
+      <button class="btn btn-primary">Search</button>
+    </form>
+
+  </div>
+</header>
+
+
+  <div class="container">
+    <nav class="breadcrumb">
+      <i class="fa-solid fa-house"></i>
+      <a href="index.html">Home</a> <span>›</span>
+      <a href="doctors.html">Doctors &amp; Departments</a> <span>›</span>
+      MUDr. Petra Malá
+    </nav>
+  </div>
+
+  <main id="main-content" class="container doctor-detail-layout">
+    <article class="doctor-detail">
+      <header class="doctor-detail-header">
+        <img src="img/female-doctor4.jpg"
+             alt="AI-generated portrait of neurologist MUDr. Petra Malá"
+             class="doctor-detail-photo">
+        <div>
+          <h1>MUDr. Petra Malá</h1>
+          <p class="doctor-specialty">Neurology &amp; headache clinic</p>
+          <p class="doctor-detail-meta">
+            Department: Neurology · Location: 4th floor, room 405<br>
+            Speaks: Czech, English (example data)
+          </p>
+        </div>
+      </header>
+
+      <section>
+        <h2>Profile</h2>
+        <p>
+          MUDr. Petra Malá is a fictional neurologist with a focus on headaches, dizziness and long-term
+          neurological conditions. In this student prototype she represents specialist neurological care.
+        </p>
+      </section>
+
+      <section>
+        <h2>Approach to patients</h2>
+        <p>
+          Dr. Malá explains examinations such as MRI or nerve conduction tests in simple terms and discusses
+          what each result means for everyday life. She emphasises realistic expectations and gradual progress.
+        </p>
+      </section>
+
+      <section>
+        <h2>Clinical focus</h2>
+        <ul>
+          <li>Diagnosis and management of migraines and chronic headaches</li>
+          <li>Assessment of balance problems, dizziness and neuropathies</li>
+          <li>Long-term follow-up for chronic neurological diseases (example)</li>
+          <li>Cooperation with Rehabilitation &amp; Physiotherapy for movement difficulties</li>
+        </ul>
+      </section>
+
+      <section aria-label="Example availability">
+        <h2>Upcoming example availability</h2>
+        <ul class="simple-list availability-list">
+          <li>
+            <time datetime="2025-12-09T09:15">9 Dec 2025, 09:15</time> – New patient neurology visit
+          </li>
+          <li>
+            <time datetime="2025-12-11T11:00">11 Dec 2025, 11:00</time> – Follow-up after MRI
+          </li>
+          <li>
+            <time datetime="2025-12-12T15:30">12 Dec 2025, 15:30</time> – Headache treatment review
+          </li>
+        </ul>
+        <p class="note">
+          Example times fit within the Neurology opening hours
+          (Monday–Friday 09:00–16:00) shown in the
+          <a href="index.html#opening-hours">Opening hours</a> table.
+        </p>
+      </section>
+
+      <section class="info-card">
+        <h2>Booking &amp; contact</h2>
+        <p>
+          In this fictional clinic, patients can request an appointment with Dr. Malá using the online booking form.
+          Real neurological emergencies would require urgent in-person care.
+        </p>
+        <p>
+          Email: <strong>contact@vitalcare.com</strong><br>
+          Phone: <strong>+420 123 456 789</strong>
+        </p>
+      </section>
+
+      <div class="doctor-detail-actions">
+        <a href="booking.html" class="btn btn-primary">Book a visit</a>
+        <a href="doctors.html" class="btn btn-secondary">Back to doctors list</a>
+      </div>
+    </article>
+
+    <aside class="doctor-detail-aside" aria-label="Additional information">
+      <section class="info-card">
+        <h2>Location details</h2>
+        <p>
+          The Neurology department is located on the 4th floor in this fictional building, close to the
+          Rehabilitation &amp; Physiotherapy area for smoother cooperation.
+        </p>
+      </section>
+
+      <section class="info-card">
+        <h2>Related departments</h2>
+        <ul class="simple-list">
+          <li><a href="department-neurology.html">Neurology</a></li>
+          <li><a href="department-rehabilitation.html">Rehabilitation &amp; Physiotherapy</a></li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>VitalCare Clinic</h3>
+        <p>
+          Prototype of a multi-specialty clinic created for a student web design project.
+          All texts and illustrations are generated by AI.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#opening-hours">Opening hours</a></li>
+          <li><a href="doctors.html">Doctors &amp; Departments</a></li>
+          <li><a href="booking.html">Book a Visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Email: contact@vitalcare.com</p>
+        <p>Phone: +420 123 456 789</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 VitalCare Clinic — Student Prototype</p>
+    </div>
+  </footer>
+  <script src="js/nav-toggle.js"></script>
+
+<script src="js/search-suggestions.js"></script>
+</body>
+
+</html>

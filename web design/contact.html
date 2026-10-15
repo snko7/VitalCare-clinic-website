@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact &amp; how to get to us – VitalCare Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact information and how to get to the fictional VitalCare Clinic.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="logo-area">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">+</span>
+        <span class="logo-text">VitalCare Clinic</span>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <!-- Hamburger button -->
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main links -->
+      <ul class="nav-list">
+        <li><a class="nav-link nav-link--active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a class="nav-link" href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors &amp; Departments</a></li>
+        <li><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        <li>
+          <a class="nav-link nav-link--highlight" href="booking.html">
+            <i class="fa-solid fa-calendar-check"></i> Book
+          </a>
+        </li>
+      </ul>
+
+      <!-- Language switch is now INSIDE nav (and therefore inside the mobile menu) -->
+      <div class="lang-menu">
+        <input type="checkbox" id="langToggle" class="lang-toggle">
+        <label for="langToggle" class="lang-switch">
+          <i class="fa-solid fa-language"></i> EN / CZ
+        </label>
+        <ul class="lang-dropdown">
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇬🇧</span> English
+            </label>
+          </li>
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇨🇿</span> Čeština
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <label for="langToggle" class="lang-overlay"></label>
+    </nav>
+
+    <!-- Search stays as it was -->
+    <form class="site-search" action="search-results.html" method="get">
+      <input type="search" name="q" placeholder="Search doctors, exams..." aria-label="Search">
+      <button class="btn btn-primary">Search</button>
+    </form>
+
+  </div>
+</header>
+
+
+  <div class="container">
+    <nav class="breadcrumb">
+      <i class="fa-solid fa-house"></i>
+      <a href="index.html">Home</a> <span>›</span>
+      <span>Contact</span>
+    </nav>
+  </div>
+
+
+  <main id="main-content" class="container contact-layout">
+
+    <section class="page-header">
+      <h1>Contact Us</h1>
+      <p>We are here to help you with appointments, information and directions to the clinic.</p>
+    </section>
+
+    <section class="contact-grid">
+
+      <div class="contact-card fade-card">
+        <h2>Address</h2>
+        <p>
+          VitalCare Clinic<br>
+          Vinohradská 57<br>
+          130 00 Praha, Česká republika
+        </p>
+      </div>
+
+      <div class="contact-card fade-card">
+        <h2>When to contact us</h2>
+        <ul class="contact-list">
+          <li>To ask about an example appointment in this prototype.</li>
+          <li>To change or cancel a fictional booking you created on the website.</li>
+          <li>To get more information about a doctor, department or examination.</li>
+          <li>To send feedback about the usability of this student project.</li>
+        </ul>
+      </div>
+
+
+      <div class="contact-card fade-card">
+        <h2>Phone & Email</h2>
+        <p>
+          <strong>Phone:</strong> +420 123 456 789<br>
+          <strong>Email:</strong> contact@vitalcare.com
+        </p>
+      </div>
+
+    </section>
+    <section class="directions-section">
+      <h2>How to Get Here</h2>
+
+      <div class="contact-grid">
+
+        <div class="contact-card fade-card">
+          <h3><i class="fa-solid fa-train-subway"></i> Public Transport</h3>
+          <p>
+            Take tram <strong>line 10 or 22</strong> to <strong>Vinohrady</strong> stop.
+            The clinic is a <strong>2-minute walk</strong> from the tram station.
+          </p>
+        </div>
+
+        <div class="contact-card fade-card">
+          <h3><i class="fa-solid fa-m"></i> Metro</h3>
+          <p>
+            The nearest metro station is <strong>Náměstí Míru (Line A)</strong>.
+            Walk towards Vinohradská Street – approx. <strong>8 minutes</strong>.
+          </p>
+        </div>
+
+        <div class="contact-card fade-card">
+          <h3><i class="fa-solid fa-car"></i> By Car</h3>
+          <p>
+            Short-term parking is available near the clinic.
+            Please follow local parking signs and rules.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="map-section">
+      <h2>Find Us</h2>
+      <iframe src="https://maps.google.com/maps?q=Prague&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="300"
+        frameborder="0" style="border:0;">
+      </iframe>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Send Us a Message</h2>
+
+      <form action="#">
+        <div class="form-row">
+          <input type="text" placeholder="Your name">
+          <input type="email" placeholder="Your email">
+        </div>
+
+        <textarea rows="4" placeholder="Your message"></textarea>
+
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>VitalCare Clinic</h3>
+        <p>
+          Prototype of a multi-specialty clinic created for a student web design project.
+          All texts and illustrations are generated by AI.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#opening-hours">Opening hours</a></li>
+          <li><a href="doctors.html">Doctors &amp; Departments</a></li>
+          <li><a href="booking.html">Book a Visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Email: contact@vitalcare.com</p>
+        <p>Phone: +420 123 456 789</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 VitalCare Clinic — Student Prototype</p>
+    </div>
+  </footer>
+  <script src="js/nav-toggle.js"></script>
+
+<script src="js/search-suggestions.js"></script>
+</body>
+
+</html>

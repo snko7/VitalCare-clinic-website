@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Book a visit – VitalCare Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Online booking form for a visit or examination at the fictional VitalCare Clinic (student project).">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="logo-area">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">+</span>
+        <span class="logo-text">VitalCare Clinic</span>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <!-- Hamburger button -->
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main links -->
+      <ul class="nav-list">
+        <li><a class="nav-link nav-link--active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a class="nav-link" href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors &amp; Departments</a></li>
+        <li><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        <li>
+          <a class="nav-link nav-link--highlight" href="booking.html">
+            <i class="fa-solid fa-calendar-check"></i> Book
+          </a>
+        </li>
+      </ul>
+
+      <!-- Language switch is now INSIDE nav (and therefore inside the mobile menu) -->
+      <div class="lang-menu">
+        <input type="checkbox" id="langToggle" class="lang-toggle">
+        <label for="langToggle" class="lang-switch">
+          <i class="fa-solid fa-language"></i> EN / CZ
+        </label>
+        <ul class="lang-dropdown">
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇬🇧</span> English
+            </label>
+          </li>
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇨🇿</span> Čeština
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <label for="langToggle" class="lang-overlay"></label>
+    </nav>
+
+    <!-- Search stays as it was -->
+    <form class="site-search" action="search-results.html" method="get">
+      <input type="search" name="q" placeholder="Search doctors, exams..." aria-label="Search">
+      <button class="btn btn-primary">Search</button>
+    </form>
+
+  </div>
+</header>
+
+  <div class="container">
+    <nav class="breadcrumb">
+      <i class="fa-solid fa-house"></i>
+      <a href="index.html">Home</a> <span>›</span> Book a visit
+    </nav>
+  </div>
+  <main class="page booking-page">
+    <div class="container">
+
+
+      <!-- Intro / steps -->
+      <section class="booking-hero">
+        <div>
+          <h1>Book a visit or examination</h1>
+          <p class="booking-lead">
+            Fill in the form below to request an appointment at the fictional VitalCare Clinic.
+          </p>
+        </div>
+
+        <ul class="booking-steps" aria-label="Booking steps overview">
+          <li><span class="step-number">1</span> Choose service &amp; doctor</li>
+          <li><span class="step-number">2</span> Enter patient details</li>
+          <li><span class="step-number">3</span> Confirm &amp; submit</li>
+        </ul>
+      </section>
+
+      <section class="booking-layout">
+
+        <!-- Right: booking form -->
+        <form class="booking-form" action="booking-confirmation.html" method="get">
+
+          <fieldset class="form-card">
+            <legend>1. Service &amp; doctor</legend>
+            <p class="booking-required-note">Fields marked with * are required.</p>
+
+            <div class="field-grid">
+              <div class="form-group">
+                <label for="visitType">Type of visit *</label>
+                <select id="visitType" name="visitType" required>
+                  <option value="">Select type</option>
+                  <option>Preventive check-up</option>
+                  <option>Consultation</option>
+                  <option>Physiotherapy</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="department">Department *</label>
+                <select id="department" name="department" required>
+                  <option value="">Select department</option>
+                  <option>General Practice &amp; Internal Medicine</option>
+                  <option>Pediatrics</option>
+                  <option>Cardiology</option>
+                  <option>Orthopedics</option>
+                  <option>Rehabilitation &amp; Physiotherapy</option>
+                  <option>Neurology</option>
+                  <option>Gynecology</option>
+                  <option>Dermatology</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <div class="form-group">
+                <label for="doctor">Preferred doctor</label>
+                <select id="doctor" name="doctor">
+                  <option>No preference</option>
+                  <option>MUDr. Anna Nováková</option>
+                  <option>MUDr. Pavel Černý</option>
+                  <option>Mgr. Jana Králová</option>
+                  <option>MUDr. Tomáš Svoboda</option>
+                  <option>MUDr. David Horák</option>
+                  <option>MUDr. Petra Malá</option>
+                  <option>MUDr. Eva Dvořáková</option>
+                  <option>MUDr. Martin Veselý</option>
+                </select>
+              </div>
+
+
+              <div class="form-group">
+                <label>Priority</label>
+                <div class="radio-row">
+                  <label><input type="radio" name="priority" value="standard" checked> Standard</label>
+                  <label><input type="radio" name="priority" value="soon"> As soon as possible</label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-card">
+            <legend>2. Patient details</legend>
+            <p class="booking-required-note">Fields marked with * are required.</p>
+
+            <div class="field-grid">
+              <div class="form-group">
+                <label for="fullName">Full name *</label>
+                <input type="text" id="fullName" name="fullName" required>
+              </div>
+
+              <div class="form-group">
+                <label for="birthDate">Date of birth</label>
+                <input type="date" id="birthDate" name="birthDate">
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+420 123 456 789">
+              </div>
+            </div>
+
+            <div class="field-grid">
+              <div class="form-group">
+                <label for="preferredDate">Preferred date *</label>
+                <input type="date" id="preferredDate" name="preferredDate" required>
+              </div>
+
+              <div class="form-group">
+                <label for="preferredTime">Preferred time *</label>
+                <input type="time" id="preferredTime" name="preferredTime" required>
+              </div>
+            </div>
+
+            <div class="form-group form-group--full">
+              <label for="reason">Reason for visit (short description)</label>
+              <textarea id="reason" name="reason" rows="3"
+                placeholder="Describe your symptoms or what you would like to consult"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-card form-card--consent">
+            <legend>3. Confirmation &amp; consent</legend>
+
+            <div class="consent-row">
+              <input type="checkbox" id="confirmData" name="confirmData" required>
+              <label for="confirmData">
+                I confirm that the information provided above is correct to the best of my knowledge.
+              </label>
+            </div>
+
+            <div class="consent-row">
+              <input type="checkbox" id="consentProcessing" name="consentProcessing" required>
+              <label for="consentProcessing">
+                I agree with the fictional processing of my personal data for the purposes of this booking example.
+              </label>
+            </div>
+
+            <div class="consent-row">
+              <input type="checkbox" id="consentReminders" name="consentReminders">
+              <label for="consentReminders">
+                I agree to receive illustrative email reminders about this example visit.
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">
+              Submit booking request
+            </button>
+            <a href="index.html" class="btn btn-secondary">Cancel</a>
+          </div>
+
+        </form>
+        <aside class="booking-info">
+          <h2>How online booking works</h2>
+          <ol>
+            <li>Send a booking request using this form.</li>
+            <li>Our fictional reception checks available times.</li>
+            <li>You receive a confirmation email with the exact date and time.</li>
+          </ol>
+
+          <div class="booking-contact-box">
+            <h3>Need urgent care?</h3>
+            <p>In case of a life-threatening situation always call the emergency line <strong>155</strong>.</p>
+            <p>
+              For same-day appointments at this fictional clinic, please call
+              <strong>+420 123 456 789</strong>.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>VitalCare Clinic</h3>
+        <p>
+          Prototype of a multi-specialty clinic created for a student web design project.
+          All texts and illustrations are generated by AI.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#opening-hours">Opening hours</a></li>
+          <li><a href="doctors.html">Doctors &amp; Departments</a></li>
+          <li><a href="booking.html">Book a Visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Email: contact@vitalcare.com</p>
+        <p>Phone: +420 123 456 789</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 VitalCare Clinic — Student Prototype</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var dateInput = document.getElementById('preferredDate');
+      var timeInput = document.getElementById('preferredTime');
+      var departmentSelect = document.getElementById('department');
+      var bookingForm = document.querySelector('.booking-form');
+
+      if (!dateInput && !timeInput) return;
+
+      // Today's date as YYYY-MM-DD
+      var now = new Date();
+      var year = now.getFullYear();
+      var month = String(now.getMonth() + 1).padStart(2, '0');
+      var day = String(now.getDate()).padStart(2, '0');
+      var todayStr = year + '-' + month + '-' + day;
+
+      // Do not allow choosing a date before today in the calendar
+      if (dateInput) {
+        dateInput.min = todayStr;
+      }
+
+      // Working hours from the Opening hours table on the homepage
+      var departmentHours = {
+        'General Practice & Internal Medicine': { open: '08:00', close: '17:00' },
+        'Pediatrics': { open: '08:00', close: '16:30' },
+        'Cardiology': { open: '09:00', close: '17:00' },
+        'Orthopedics': { open: '08:00', close: '16:00' },
+        'Rehabilitation & Physiotherapy': { open: '07:30', close: '15:30' },
+        'Neurology': { open: '09:00', close: '16:00' },
+        'Gynecology': { open: '08:00', close: '15:30' },
+        'Dermatology': { open: '09:00', close: '14:30' }
+      };
+
+      // Fallback if no department selected yet
+      var defaultRange = { open: '07:30', close: '17:00' };
+
+      function getCurrentRange() {
+        var deptText = '';
+        if (departmentSelect && departmentSelect.selectedIndex > 0) {
+          deptText = departmentSelect.options[departmentSelect.selectedIndex].text;
+        }
+        if (deptText && departmentHours[deptText]) {
+          return departmentHours[deptText];
+        }
+        return defaultRange;
+      }
+
+      function applyTimeConstraints() {
+        if (!timeInput) return;
+        var range = getCurrentRange();
+
+        // Set min/max according to department hours
+        timeInput.min = range.open;
+        timeInput.max = range.close;
+
+        // If current value is outside range, snap it into range
+        if (timeInput.value) {
+          if (timeInput.value < range.open) {
+            timeInput.value = range.open;
+          } else if (timeInput.value > range.close) {
+            timeInput.value = range.close;
+          }
+        }
+      }
+
+      // Apply initial constraints (before department is chosen, use default range)
+      applyTimeConstraints();
+
+      // When department changes, update allowed time range
+      if (departmentSelect) {
+        departmentSelect.addEventListener('change', applyTimeConstraints);
+      }
+
+      function timeToMinutes(t) {
+        var parts = t.split(':');
+        var h = parseInt(parts[0], 10) || 0;
+        var m = parseInt(parts[1], 10) || 0;
+        return h * 60 + m;
+      }
+
+      if (bookingForm) {
+        bookingForm.addEventListener('submit', function (event) {
+          // 1) Date must be today or later, and Monday–Friday
+          if (dateInput && dateInput.value) {
+            var chosen = new Date(dateInput.value + 'T00:00:00');
+            var todayDate = new Date(todayStr + 'T00:00:00');
+            var weekday = chosen.getDay(); // 0 = Sunday, 6 = Saturday
+
+            if (chosen < todayDate || weekday === 0 || weekday === 6) {
+              event.preventDefault();
+              alert('In this demo you can only book visits on future working days (Monday–Friday). Please choose another date.');
+              dateInput.focus();
+              return;
+            }
+          }
+
+          // 2) Time must be inside working hours of selected department
+          var range = getCurrentRange();
+          if (timeInput && timeInput.value) {
+            if (timeInput.value < range.open || timeInput.value > range.close) {
+              event.preventDefault();
+              alert('Please choose a time within the working hours for the selected department: ' +
+                range.open + '–' + range.close + '.');
+              timeInput.focus();
+              return;
+            }
+          }
+
+          // 3) If booking for today, the time must be in the future (not already passed)
+          if (dateInput && dateInput.value === todayStr && timeInput && timeInput.value) {
+            var nowMinutes = now.getHours() * 60 + now.getMinutes();
+            var chosenMinutes = timeToMinutes(timeInput.value);
+            if (chosenMinutes <= nowMinutes) {
+              event.preventDefault();
+              alert('This time has already passed today. Please choose a later time.');
+              timeInput.focus();
+              return;
+            }
+          }
+        });
+      }
+    });
+  </script>
+  <script src="js/nav-toggle.js"></script>
+
+  <script src="js/search-suggestions.js"></script>
+</body>
+
+</html>

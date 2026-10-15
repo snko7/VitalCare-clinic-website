@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pediatrics – VitalCare Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Example department page for Pediatrics at the fictional VitalCare Clinic.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="logo-area">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">+</span>
+        <span class="logo-text">VitalCare Clinic</span>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <!-- Hamburger button -->
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main links -->
+      <ul class="nav-list">
+        <li><a class="nav-link nav-link--active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a class="nav-link" href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors &amp; Departments</a></li>
+        <li><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        <li>
+          <a class="nav-link nav-link--highlight" href="booking.html">
+            <i class="fa-solid fa-calendar-check"></i> Book
+          </a>
+        </li>
+      </ul>
+
+      <!-- Language switch is now INSIDE nav (and therefore inside the mobile menu) -->
+      <div class="lang-menu">
+        <input type="checkbox" id="langToggle" class="lang-toggle">
+        <label for="langToggle" class="lang-switch">
+          <i class="fa-solid fa-language"></i> EN / CZ
+        </label>
+        <ul class="lang-dropdown">
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇬🇧</span> English
+            </label>
+          </li>
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇨🇿</span> Čeština
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <label for="langToggle" class="lang-overlay"></label>
+    </nav>
+
+    <!-- Search stays as it was -->
+    <form class="site-search" action="search-results.html" method="get">
+      <input type="search" name="q" placeholder="Search doctors, exams..." aria-label="Search">
+      <button class="btn btn-primary">Search</button>
+    </form>
+
+  </div>
+</header>
+
+
+  <div class="container">
+    <nav class="breadcrumb">
+      <i class="fa-solid fa-house"></i>
+      <a href="index.html">Home</a> <span>›</span>
+      <a href="doctors.html">Doctors &amp; Departments</a> <span>›</span>
+      Pediatrics
+    </nav>
+  </div>
+
+  <main id="main-content" class="container">
+    <section class="page-header">
+      <h1>Pediatrics</h1>
+      <p class="lead">
+        Comprehensive care for children and adolescents – from preventive check-ups and vaccinations to treatment
+        of common illnesses.
+      </p>
+    </section>
+
+    <section class="info-card fade-card">
+      <h2>What we do</h2>
+      <p>
+        This fictional Pediatrics department supports healthy development from birth to adolescence. The focus is on
+        prevention, early diagnosis and cooperation with parents.
+      </p>
+      <ul>
+        <li>Regular preventive examinations and growth monitoring</li>
+        <li>Vaccinations according to recommended schedules (example)</li>
+        <li>Treatment of common childhood infections and allergies</li>
+        <li>Consultations for parents on nutrition, sleep and routine</li>
+      </ul>
+    </section>
+
+    <section class="info-card fade-card">
+      <h2>Opening hours &amp; booking (example)</h2>
+      <p class="note">
+        Example opening hours: Monday–Friday <strong>08:00–16:30</strong> (as shown in the
+        <a href="index.html#opening-hours">Opening hours</a> table).
+      </p>
+      <p>
+        Parents can use the booking form in this student project to “request” a check-up or consultation.
+      </p>
+      <p><a href="booking.html" class="btn-sm">Book a pediatric visit (example)</a></p>
+    </section>
+
+    <section class="info-card fade-card">
+      <h2>Doctor in this department (prototype)</h2>
+      <ul class="simple-list">
+        <li>
+          <a href="doctor-pavel.html">
+            MUDr. Pavel Černý – Pediatrics &amp; family medicine
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>VitalCare Clinic</h3>
+        <p>Prototype of a multi-specialty clinic created for a student web design project.
+          All texts and illustrations are generated by AI.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#opening-hours">Opening hours</a></li>
+          <li><a href="doctors.html">Doctors &amp; Departments</a></li>
+          <li><a href="booking.html">Book a Visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Email: contact@vitalcare.com</p>
+        <p>Phone: +420 123 456 789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 VitalCare Clinic — Student Prototype</p>
+    </div>
+  </footer>
+  <script src="js/nav-toggle.js"></script>
+
+<script src="js/search-suggestions.js"></script>
+</body>
+
+</html>

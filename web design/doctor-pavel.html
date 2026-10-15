@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Detail – MUDr. Pavel Černý – VitalCare Clinic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Example detailed profile of pediatrician MUDr. Pavel Černý at the fictional VitalCare Clinic.">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+
+    <div class="logo-area">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">+</span>
+        <span class="logo-text">VitalCare Clinic</span>
+      </a>
+    </div>
+
+    <nav class="main-nav">
+      <!-- Hamburger button -->
+      <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Main links -->
+      <ul class="nav-list">
+        <li><a class="nav-link nav-link--active" href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a class="nav-link" href="doctors.html"><i class="fa-solid fa-user-doctor"></i> Doctors &amp; Departments</a></li>
+        <li><a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About Us</a></li>
+        <li><a class="nav-link" href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        <li>
+          <a class="nav-link nav-link--highlight" href="booking.html">
+            <i class="fa-solid fa-calendar-check"></i> Book
+          </a>
+        </li>
+      </ul>
+
+      <!-- Language switch is now INSIDE nav (and therefore inside the mobile menu) -->
+      <div class="lang-menu">
+        <input type="checkbox" id="langToggle" class="lang-toggle">
+        <label for="langToggle" class="lang-switch">
+          <i class="fa-solid fa-language"></i> EN / CZ
+        </label>
+        <ul class="lang-dropdown">
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇬🇧</span> English
+            </label>
+          </li>
+          <li>
+            <label for="langToggle">
+              <span class="flag">🇨🇿</span> Čeština
+            </label>
+          </li>
+        </ul>
+      </div>
+
+      <label for="langToggle" class="lang-overlay"></label>
+    </nav>
+
+    <!-- Search stays as it was -->
+    <form class="site-search" action="search-results.html" method="get">
+      <input type="search" name="q" placeholder="Search doctors, exams..." aria-label="Search">
+      <button class="btn btn-primary">Search</button>
+    </form>
+
+  </div>
+</header>
+
+
+  <!-- BREADCRUMB -->
+  <div class="container">
+    <nav class="breadcrumb">
+      <i class="fa-solid fa-house"></i>
+      <a href="index.html">Home</a> <span>›</span>
+      <a href="doctors.html">Doctors</a> <span>›</span>
+      <span>MUDr. Pavel Černý</span>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" class="container doctor-detail-layout">
+    <article class="doctor-detail">
+      <header class="doctor-detail-header">
+        <img src="img/male-doctor.avif"
+             alt="AI-generated portrait of pediatrician MUDr. Pavel Černý"
+             class="doctor-detail-photo">
+        <div>
+          <h1>MUDr. Pavel Černý</h1>
+          <p class="doctor-specialty">Pediatrics &amp; family medicine</p>
+          <p class="doctor-detail-meta">
+            Department: Pediatrics · Location: 3rd floor, room 305<br>
+            Speaks: Czech, English (example data)
+          </p>
+        </div>
+      </header>
+
+      <section>
+        <h2>Profile</h2>
+        <p>
+          MUDr. Pavel Černý is a pediatrician focused on the long-term health and development
+          of children from birth to adolescence. He combines evidence-based medicine with
+          a calm and friendly approach that helps children and parents feel safe and informed.
+        </p>
+      </section>
+
+      <section>
+        <h2>Approach to patients</h2>
+        <p>
+          During consultations, Dr. Černý takes time to listen to parents' concerns and explain
+          diagnoses in clear language. He emphasises prevention, vaccination and healthy lifestyle,
+          and always encourages parents to ask questions so they leave the visit with confidence.
+        </p>
+      </section>
+
+      <section>
+        <h2>Clinical focus</h2>
+        <ul>
+          <li>Preventive check-ups and vaccination schedules for children</li>
+          <li>Management of common childhood illnesses and allergies</li>
+          <li>Monitoring growth and development, including school-age problems</li>
+          <li>Consultations for parents on nutrition, sleep and daily routines</li>
+        </ul>
+      </section>
+
+      <section aria-label="Example availability">
+        <h2>Upcoming example availability</h2>
+        <ul class="simple-list availability-list">
+          <!-- Pediatrics opening hours on homepage: 08:00–16:30 -->
+          <li>
+            <time datetime="2025-12-09T09:30">09 Dec 2025, 09:30</time> – Well-child check-up
+          </li>
+          <li>
+            <time datetime="2025-12-10T14:00">10 Dec 2025, 14:00</time> – Follow-up consultation
+          </li>
+          <li>
+            <time datetime="2025-12-12T10:15">12 Dec 2025, 10:15</time> – Vaccination &amp; short examination
+          </li>
+        </ul>
+        <p class="note">
+          Example times fit within the Pediatrics opening hours
+          (Monday–Friday 08:00–16:30) shown in the
+          <a href="index.html#opening-hours">Opening hours</a> table.
+        </p>
+      </section>
+
+      <section class="info-card">
+        <h2>Booking &amp; contact</h2>
+        <p>
+          Parents can request an appointment with Dr. Černý using the online booking form,
+          or by contacting reception by phone or email. For urgent health problems
+          you should always call the emergency services in your area.
+        </p>
+        <p>
+          Preferred booking method: online form or phone during office hours.<br>
+          Email: <strong>contact@vitalcare.com</strong><br>
+          Phone: <strong>+420 123 456 789</strong>
+        </p>
+        <div class="doctor-detail-actions">
+  <a href="booking.html" class="btn btn-primary">Book a visit</a>
+  <a href="doctors.html" class="btn btn-secondary">Back to doctors list</a>
+</div>
+
+      </section>
+    </article>
+
+    <aside class="doctor-aside">
+      <section class="info-card">
+        <h2>Example location in the clinic</h2>
+        <p>
+          Pediatrics is located on the 3rd floor, near the family waiting room with a small play area.
+          The fictional clinic has a lift and space for prams in front of the department.
+        </p>
+      </section>
+
+      <section class="info-card">
+        <h2>Related departments</h2>
+        <ul class="simple-list">
+          <li><a href="department-pediatrics.html">Pediatrics</a></li>
+          <li><a href="department-general-practice.html">General Practice &amp; Internal Medicine</a></li>
+          <li><a href="department-rehabilitation.html">Rehabilitation &amp; Physiotherapy</a></li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>VitalCare Clinic</h3>
+        <p>
+          Prototype of a multi-specialty clinic created for a student web design project.
+          All texts and illustrations are generated by AI.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#opening-hours">Opening hours</a></li>
+          <li><a href="doctors.html">Doctors &amp; Departments</a></li>
+          <li><a href="booking.html">Book a Visit</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>Email: contact@vitalcare.com</p>
+        <p>Phone: +420 123 456 789</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 VitalCare Clinic — Student Prototype</p>
+    </div>
+  </footer>
+  <script src="js/nav-toggle.js"></script>
+
+<script src="js/search-suggestions.js"></script>
+</body>
+
+</html>
